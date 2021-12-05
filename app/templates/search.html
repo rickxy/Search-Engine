@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>{% block title %}SRS Vertical Search Engine{% endblock %}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+
+</head>
+    <body>
+
+
+
+{% block body %}
+
+	<div class="wrap">
+		<div class="content">
+				<div class="logo">
+					<a href="/"><h1>SRS</h1></a>
+				</div>
+				<p>Vertical Search Engine</p>
+				<div class="form">
+					<form id="search-form" action="/search_results" method="get">
+						<input type="text" tabindex="2" name="search"  placeholder="Search ..." equired>
+						<input type="submit" name="submit" id="submit" value="Search">
+               <!-- <button type="submit" class="btn btn-success">Search</button> -->
+
+					</form>
+
+				</div>
+				<div class="footer">
+				<p class="copy">&#169; 2021 Designed by<a href="#" target="_blank"><strong style="color:blue">&nbsp;ProTech Corporation</strong></a> </p>
+				</div>
+			</div>
+		</div>
+
+
+{% endblock %}
+
+
+    </body>
+</html>
